@@ -5,6 +5,7 @@
   "main": "start.js",
   "type": "module",
   "dependencies": {
-    "csv-parser": "^3.0.0"
+    "csv-parser": "^3.0.0",
+    "neat-csv": "^7.0.0"
   }
 }
