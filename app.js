@@ -18,6 +18,7 @@ let filters = [
 ]
 
 
+
 fs.promises.readFile(argFile).then(buffer => {
     let content = buffer.toString();
     if (argType=="csv")  content = getColumnContent(buffer,argColl);
