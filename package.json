@@ -1,8 +1,8 @@
 {
   "name": "word-frequency-analyzer",
-  "version": "0.1",
-  "description": "",
-  "main": "start.js",
+  "version": "1",
+  "description": "tool to count word usage in text file of within a specific folder of a CSV",
+  "main": "app.js",
   "type": "module",
   "dependencies": {
     "csv-parser": "^3.0.0",
