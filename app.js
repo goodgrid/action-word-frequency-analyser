@@ -3,9 +3,8 @@ import neatCsv from "neat-csv";
 
 let argType = process.argv[2]
 let argFile = process.argv[3]
-let argColl = process.argv[4]
-let argLang = process.argv[5]
-
+let argLang = process.argv[4]
+let argColl = process.argv[5]
 
 let delimiters = /[\s_-]/
 
@@ -52,9 +51,14 @@ let stopWords = {
         /de/i,
         /en/i,
         /naar/i
+    ],
+    "Italian": [
+        
     ]
 
 }
+
+console.log(`Text analysis started for file ${argFile} of type ${argType} in language ${argLang}`)
 
 fs.promises.readFile(argFile).then(buffer => {
     let content = buffer.toString();
